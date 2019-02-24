@@ -5,7 +5,7 @@ require './lib/enigma'
 require 'minitest/autorun'
 require 'minitest/pride'
 
-class EnigmaTest < Minitest::Test
+class KeyTest < Minitest::Test
 
   def setup
     @key = Key.new
