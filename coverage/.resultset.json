@@ -1,0 +1,13 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/glynnisoconnell/turing/1module/Enigma/lib/enigma.rb": [
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1550860305
+  }
+}
