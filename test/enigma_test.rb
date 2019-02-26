@@ -15,9 +15,16 @@ class EnigmaTest < Minitest::Test
     assert_instance_of Enigma, @enigma
   end
 
-  def test_it_returns_a_key
-    assert_equal 12345, @enigma.key(12345)
-  end
+  # def test_it_returns_a_key_with_five_digits
+  #   @enigma.key.count
+  #   assert_instance_of 5, @enigma.key
+  # end
+
+  # def test_it_splits_a_key_into_a_hash
+  #   @enigma.key(12345)
+  #   expected = {a: 12, b: 23, c: 34, d: 45}
+  #   assert_equal expected, @enigma.key_to_hash
+  # end
 end
 
   # def test_it_returns_encrypted_message_in_hash
