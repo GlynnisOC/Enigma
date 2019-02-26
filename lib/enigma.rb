@@ -14,11 +14,11 @@ class Enigma
   end
 
   def key_to_hash
-
+    key = "12345"
+    # binding.pry
+    arr = key.split("").map { |d| d.to_i }
+    arr.each_slice(1).to_a
   end
-#   Hash["a", 100, "b", 200]             #=> {"a"=>100, "b"=>200}
-# Hash[ [ ["a", 100], ["b", 200] ] ]   #=> {"a"=>100, "b"=>200}
-# Hash["a" => 100, "b" => 200]         #=> {"a"=>100, "b"=>200}
   # def encrypt(message, key, date)
   # end
   #
