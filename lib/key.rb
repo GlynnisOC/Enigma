@@ -2,6 +2,7 @@ class Key
 
   nums = (0..99999).to_a
   key = nums.sample.to_s.rjust(5, '0')
+
 end
 
 # def rand_n(n, max)
