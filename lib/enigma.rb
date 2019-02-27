@@ -16,7 +16,7 @@ class Enigma
   def date
     Time.now.strftime("%D").delete "/"
   end
-
+  binding.pry
   def date_squared
     (date.to_i ** 2).to_s
   end
