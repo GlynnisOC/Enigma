@@ -17,10 +17,9 @@ class EnigmaTest < Minitest::Test
     assert_instance_of Enigma, @enigma
   end
 
-  # def test_it_returns_a_key_with_five_digits
-  #   @key.to_i.digits.count
-  #   assert_instance_of 5, @enigma.key
-  # end
+  def test_it_returns_a_key_with_five_digits
+    assert_equal ["0", "2", "7", "1", "5"], @enigma.get_key()
+  end
 
   def test_it_returns_the_date
     assert_equal "022619", @enigma.date
@@ -28,6 +27,10 @@ class EnigmaTest < Minitest::Test
 
   def test_it_squares_the_date
     assert_equal "511619161", @enigma.date_squared
+  end
+
+  def test_it_slices_the_last_four_digits
+    assert_equal "9161", @enigma.last_four
   end
 
   def test_it_returns_encrypted_message_in_hash
