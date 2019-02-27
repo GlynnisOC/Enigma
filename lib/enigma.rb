@@ -1,22 +1,22 @@
 class Enigma
   require 'pry'
-  attr_reader :key
+
+  attr_reader :key, :chars, :shift
 
   chars = ("a".."z").to_a << " "
   nums = (0..99999).to_a
-    # binding.pry
   key = nums.sample.to_s.rjust(5, '0')
+  @shift = []
+  # binding.pry
+  @shift << chars
+  @shift << key.to_i
 
-  # def key_to_hash
-  #   key = "12345"
-  #   arr = key.split("").map { |d| d.to_i }
-  #   arr.each_slice(1).to_a
-  # end
-
-  # def encrypt(message, key, date)
-  # end
+  def encrypt(message, key, date)
+    #takes the orig msg and encrypts, takes key/date and leaves as is
+  end
   #
-  # def decrypt(ciphertext, key, date)
-  # end
+  def decrypt(ciphertext, key, date)
+    #opposite of what encrypt does
+  end
 
 end
