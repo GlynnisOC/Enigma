@@ -1,5 +1,6 @@
 class Enigma
   require 'pry'
+
   attr_reader :key, :chars, :shift
 
   chars = ("a".."z").to_a << " "
@@ -17,6 +18,5 @@ class Enigma
   def decrypt(ciphertext, key, date)
     #opposite of what encrypt does
   end
-
 
 end

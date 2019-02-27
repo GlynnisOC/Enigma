@@ -2,6 +2,8 @@ require 'simplecov'
 SimpleCov.start
 # require './lib/enigma'
 require './lib/key'
+require './lib/key'
+require './lib/enigma'
 require 'minitest/autorun'
 require 'minitest/pride'
 
@@ -14,4 +16,7 @@ class KeyTest < Minitest::Test
   def test_it_exists
     assert_instance_of Key, @key
   end 
+
+  end
+
 end
